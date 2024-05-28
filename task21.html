@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Studio</title>
+    <link rel="stylesheet" href="./task21.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Yoga Studio</a>
+        <div class="burger-container">
+            <div class="burger" onclick="toggleNav()">&#9776;</div>
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#image" class="nav-link">Gallery</a></li>
+                    <li><a href="#footer" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="home" class="back">
+        <div class="main-home">
+            <div class="inner-home">
+                <div class="image-container">
+                    <img id="cycling-image" src="https://mindworks.org/app/uploads/2023/06/shutterstock_559454563-web.jpg.webp" alt="Yoga Image" width="200px" height="100px">
+                </div>
+            </div>
+            <div class="inner-home">
+                <div class="inner-content">
+                    <h1>Yoga class</h1>
+                    <p>Yoga is a mind and body practice that can build strength and flexibility. It may also help manage pain and reduce stress. Various styles of yoga combine physical postures, breathing techniques, and meditation. Yoga is an ancient practice that may have originated in India.</p>
+                    <div>
+                        <form>
+                            <input type="submit" value="Register" class="submit" formaction="./registration2.html">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <section id="about">
+    <div class="back">
+        <div class="main-home">
+            <div class="inner-home about">
+                <img src="https://cdn.yogajournal.com/wp-content/uploads/2022/01/Tree-Pose_Alt-1_2400x1350_Andrew-Clark.jpeg?crop=16:9&width=1500" alt="" class="first">
+                <img src="https://articles-1mg.gumlet.io/articles/wp-content/uploads/2015/09/yoga3-2.jpg?compress=true&quality=80&w=640&dpr=1" alt="" class="second">
+                <img src="https://www.keralatourism.org/images/yoga/static-banner/large/Yoga_Mudrasana-07032020174015.jpg" alt="" class="third">
+            </div>
+            <div class="inner-home">
+                <div class="inner-content">
+                    <h1>About</h1>
+                    <p>The ancient practice of Yoga is one of the greatest exponents of the phenomenon called globalization. It is widely accepted across the globe as an overall wellness science and scores brownie points in being low-cost and super convenient.</p>
+                    <div>
+                        <input type="submit" value="READ MORE" class="readmore">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="image">
+    <div class="back">
+        <h1>Gallery</h1>
+        <div class="main-home">
+            <div><img src="https://media.istockphoto.com/id/1316303507/photo/young-asian-couple-using-laptop-for-online-yoga-class.jpg?s=612x612&w=0&k=20&c=JOHoyN6K6FVg0ygQ50w3lPVa01CdCJDRG7SU2OcQDMM=" alt=""></div>
+            <div><img src="https://media.istockphoto.com/id/1324657140/photo/female-asian-yoga-instructor-conducting-an-online-class-with-laptop.jpg?s=612x612&w=0&k=20&c=gwgL7lBYM78pQr2KV_lmYJV-nTIwul10HGy_hkrgug0=" alt=""></div>
+            <div><img src="https://s3.envato.com/files/346470072/DSC01956.jpg" alt=""></div>
+            <div><img src="https://media.istockphoto.com/id/1408455315/photo/asian-senior-man-training-and-stretching-arm.jpg?s=612x612&w=0&k=20&c=2NIC7qmNq4oO_zUvkbLt3LJ7xIo_juyvnBZTT4D8CaE=" alt=""></div>
+            <div><img src="https://media.istockphoto.com/id/667293728/photo/young-yogi-attractive-woman-in-vrksasana-pose-white-loft-background.jpg?s=612x612&w=0&k=20&c=4gRlwc21131Q_SKrj3evMNERTL_kiLWgcEA_Z6Eucco=" alt=""></div>
+            <div><img src="https://t3.ftcdn.net/jpg/05/04/65/06/240_F_504650674_YkO6iQDT0AHJXEhgj57dTgS31QoRTa00.jpg" alt=""></div>
+            <div><img src="https://thumbs.dreamstime.com/b/diverse-young-sporty-people-doing-warrior-one-exercise-group-lesson-practicing-yoga-modern-fitness-center-standing-168459727.jpg" alt=""></div>
+            <div><img src="https://i0.wp.com/www.startstanding.org/wp-content/uploads/2019/01/Fotolia_163647024_S.jpg?resize=849%2C566" alt=""></div>
+
+
+
+            
+        </div>
+    </div>
+</section>
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="ml-auto col-lg-5 col-md-6 col-12">
+                <h2 style="font-family: 'Lora', serif; letter-spacing: 2px;" class="mb-4 pb-2" data-aos="fade-up"
+                    data-aos-delay="200">
+                    Feel Free to ask anything
+                </h2>
+
+                <form action="#" method="post" class="contact-form webform" data-aos-delay="400" data-aos="fade-up"
+                    role="form">
+
+
+                    <input type="text" name="cf-name" class="form-control" placeholder="Name">
+                    <input type="email" name="cf-email" class="form-control" placeholder="Emails">
+                    <textarea name="cf-messgae" rows="5" class="form-control" placeholder="Message"></textarea>
+                    <button type="submit" class="form-control" id="submit-button" name="submit">Send
+                        Message</button>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+    <footer id="footer">
+        <p>Contact Us:</p>
+        <p>Email: info@yogalax.com</p>
+        <p>Phone: +1-123-456-7890</p>
+        <p>Address: 123 Yoga Street, City, Country</p>
+    </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.nav-links');
+            nav.classList.toggle('nav-active');
+        }
+
+        // JavaScript for cycling images with animation
+        const images = [
+            "https://mindworks.org/app/uploads/2023/06/shutterstock_559454563-web.jpg.webp",
+            "https://cdn.pixabay.com/photo/2021/10/19/11/35/yoga-6723315_960_720.jpg",
+            "https://img.freepik.com/premium-photo/individuals-practicing-yoga-meditation-serene-environments_1095373-1068.jpg?w=740",
+            "https://t3.ftcdn.net/jpg/06/74/95/16/240_F_674951676_dwdvGDIMIXPlz3tjXwjjmF9GAk9NrGn5.jpg"
+        ];
+
+        let currentIndex = 0;
+        const cyclingImage = document.getElementById('cycling-image');
+
+        function cycleImages() {
+            cyclingImage.classList.add('slide-out');
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                cyclingImage.src = images[currentIndex];
+                cyclingImage.classList.remove('slide-out');
+                cyclingImage.classList.add('slide-in');
+                setTimeout(() => {
+                    cyclingImage.classList.remove('slide-in');
+                }, 1000); 
+            }, 1000); 
+        }
+
+        setInterval(cycleImages, 3000); 
+    </script>
+</body>
+</html>
