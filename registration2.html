@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+    <script>
+        function validation() {
+            const resultElement = document.getElementById("result");
+
+            if (document.Formfill.Username.value == "") {
+                resultElement.innerHTML = "Enter Username*";
+                return false;
+            } else if (document.Formfill.Username.value.length < 6) {
+                resultElement.innerHTML = "At least six letters*";
+                return false;
+            } else if (document.Formfill.Email.value == "") {
+                resultElement.innerHTML = "Enter your email*";
+                return false;
+            } else if (document.Formfill.Password.value == "") {
+                resultElement.innerHTML = "Enter your password";
+                return false;
+            } else if (document.Formfill.Password.value.length < 6) {
+                resultElement.innerHTML = "Password must be 6 digits";
+                return false;
+            } else if (document.Formfill.cPassword.value == "") {
+                resultElement.innerHTML = "Enter confirm password";
+                return false;
+            } else if (document.Formfill.cPassword.value !== document.Formfill.Password.value) {
+                resultElement.innerHTML = "Passwords don't match";
+                return false;
+            } else {
+                document.getElementById("popup").classList.add("open-slide");
+                return false; // Prevent form submission to show popup
+            }
+        }
+
+        function CloseSlide() {
+            document.getElementById("popup").classList.remove("open-slide");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form name="Formfill" onsubmit="return validation()" method="post">
+                <h2>Register</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <input type="text" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="cPassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" value="Register">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forgot password</a></span>
+                    <span><a href="./login.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Thank You</h2>
+            <p>You have registered successfully. Thank you!</p>
+            <button onclick="CloseSlide()">OK</button>
+        </div>
+    </div>
+</body>
+</html>
